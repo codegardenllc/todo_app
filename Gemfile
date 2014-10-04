@@ -41,6 +41,8 @@ gem 'bootstrap-sass', '3.2.0'
 
 gem 'decent_exposure'
 
+gem 'rails_12factor'
+
 group :production do
   gem 'pg'
 end

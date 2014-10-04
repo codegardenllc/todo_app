@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141004152130) do
+ActiveRecord::Schema.define(version: 20140906153411) do
 
   create_table "item_types", force: true do |t|
     t.string   "name"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20141004152130) do
   create_table "items", force: true do |t|
     t.string  "name"
     t.boolean "completed"
-    t.date    "completed_at"
+    t.time    "completed_at"
     t.integer "item_type_id"
   end
 

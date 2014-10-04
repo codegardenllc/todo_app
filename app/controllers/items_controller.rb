@@ -14,6 +14,8 @@ class ItemsController < ApplicationController
   end
 
   def create
+    item.attributes = item_params
+    
     if item.save
       redirect_to items_path
     else
